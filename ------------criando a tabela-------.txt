@@ -1,0 +1,29 @@
+------------criando a tabela--------------------
+
+create database teste;
+
+use teste;
+create table users(
+id int primary key auto_increment,
+name varchar(100),
+age int
+);
+
+select * from users 
+where id = 7
+;
+
+
+------------inserindo dados na tabela--------------------
+
+INSERT INTO users(name, age) VALUES ('Gabriela Falcão', 27);
+INSERT INTO users(name, age) VALUES ('Nicolas Nick', 32);
+INSERT INTO users(name, age) VALUES ('Izabella Santos', 25);
+INSERT INTO users(name, age) VALUES ('Gustavo Santiago', 29);
+INSERT INTO users(name, age) VALUES ('Caroline Carol', 31);
+INSERT INTO users(name, age) VALUES ('Giovana Sgarbe', 26);
+INSERT INTO users(name, age) VALUES ('ladrao de galin', 29);
+
+update users set name = 'ladrao de galinha';
+
+drop table users;
